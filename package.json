@@ -1,0 +1,22 @@
+{
+  "name": "nft-card-frontendmentor",
+  "version": "1.0.0",
+  "description": "PSD converted to live component using sass and html",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/sass/main.scss:./styles/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/latif-essam/nft-card-frontendmentor.git"
+  },
+  "keywords": [
+    "frontend-master"
+  ],
+  "author": "\"latif essam\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/latif-essam/nft-card-frontendmentor/issues"
+  },
+  "homepage": "https://github.com/latif-essam/nft-card-frontendmentor#readme"
+}

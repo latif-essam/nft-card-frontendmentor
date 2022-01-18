@@ -9,6 +9,12 @@ body {
   background-color: #0d192b;
 }
 
+main {
+  margin-top: 10px;
+  width: "100%";
+  height: "90%";
+}
+
 .container {
   display: flex;
   flex: 1;
@@ -22,19 +28,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 
 @media screen and (max-width: 375px) {
-  main {
-    width: "100%";
-    height: "100%";
+  .card_header {
+    font-size: 14px;
   }
-
-  footer {
-    padding: 20px 20px;
-    text-align: center;
-    margin: 100px auto;
+  .card_p {
+    font-size: 12px;
   }
 
   .card-container_media {
@@ -42,15 +43,11 @@ body {
   }
 }
 @media screen and (min-width: 375px) and (max-width: 1440px) {
-  main {
-    width: "100%";
-    height: "100%";
+  .card_header {
+    font-size: 15px;
   }
-
-  footer {
-    padding: 20px 20px;
-    text-align: center;
-    margin: 100px auto;
+  .card_p {
+    font-size: 13px;
   }
 
   .card-container_media {
@@ -58,15 +55,11 @@ body {
   }
 }
 @media screen and (min-width: 1440px) {
-  main {
-    width: 100%;
-    height: 100%;
+  .card_header {
+    font-size: 20px;
   }
-
-  footer {
-    text-align: center;
-    margin: auto 0px;
-    padding: 20px 20px;
+  .card_p {
+    font-size: 17px;
   }
 
   .card-container_media {
@@ -80,7 +73,7 @@ body {
   background-color: #14253d;
   padding: 20px;
   width: 80%;
-  margin: 50px 0px;
+  margin: 5% 0px;
   line-height: 150%;
 }
 .card_img {
@@ -91,11 +84,9 @@ body {
 .card_header {
   margin-bottom: 15px;
   color: white;
-  font-size: 20px;
   font-weight: 300;
 }
 .card_p {
-  font-size: 13px;
   color: #8bacda;
 }
 .card_info {
@@ -154,14 +145,20 @@ body {
 .card_divider {
   width: 90%;
   margin: 0 auto;
+  color: #2f415b;
 }
 
-footer {
-  bottom: 5px;
+footer p {
+  position: fixed;
+  margin-top: 20px;
+  bottom: 0px;
+  text-align: center;
+  left: 0;
+  right: 0;
   font-size: 18px;
   color: #8bacda;
 }
-footer a {
+footer p a {
   color: #00fff7;
 }
 

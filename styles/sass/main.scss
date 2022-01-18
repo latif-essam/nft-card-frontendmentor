@@ -27,6 +27,12 @@ body {
   font-family: $main_font;
   background-color: $main_bg_dark_blue;
 }
+main {
+  margin-top: 10px;
+  width: "100%";
+  height: "90%";
+}
+
 .container {
   display: flex;
   flex: 1;
@@ -35,24 +41,25 @@ body {
   align-items: center;
 }
 
-// media Screen
-// mobile
 .card-container {
   background-color: $main_bg_dark_blue;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  // align-items: flex-end;
 }
+
+// media Screen
+// mobile
+
 @media screen and (max-width: $mobile_width) {
-  main {
-    width: "100%";
-    height: "100%";
-  }
-  footer {
-    padding: 20px 20px;
-    text-align: center;
-    margin: 100px auto;
+  .card {
+    &_header {
+      font-size: 14px;
+    }
+    &_p {
+      font-size: 12px;
+    }
   }
   .card-container_media {
     width: 100%;
@@ -60,14 +67,13 @@ body {
 }
 // tablet
 @media screen and (min-width: $mobile_width) and (max-width: $desktop_width) {
-  main {
-    width: "100%";
-    height: "100%";
-  }
-  footer {
-    padding: 20px 20px;
-    text-align: center;
-    margin: 100px auto;
+  .card {
+    &_header {
+      font-size: 15px;
+    }
+    &_p {
+      font-size: 13px;
+    }
   }
   .card-container_media {
     width: 400px;
@@ -76,14 +82,13 @@ body {
 // desktop
 
 @media screen and (min-width: $desktop_width) {
-  main {
-    width: 100%;
-    height: 100%;
-  }
-  footer {
-    text-align: center;
-    margin: auto 0px;
-    padding: 20px 20px;
+  .card {
+    &_header {
+      font-size: 20px;
+    }
+    &_p {
+      font-size: 17px;
+    }
   }
   .card-container_media {
     width: 500px;
@@ -97,7 +102,7 @@ body {
   background-color: $card_bg_dark_blue;
   padding: 20px;
   width: 80%;
-  margin: 50px 0px;
+  margin: 5% 0px;
 
   line-height: 150%;
   &_img {
@@ -109,12 +114,10 @@ body {
   &_header {
     margin-bottom: 15px;
     color: $White;
-    font-size: 20px;
     font-weight: $fw_300;
   }
 
   &_p {
-    font-size: 13px;
     color: $primary_soft_blue;
   }
   &_info {
@@ -173,11 +176,17 @@ body {
   &_divider {
     width: 90%;
     margin: 0 auto;
+    color: hsl(215, 32%, 27%);
   }
 }
 
-footer {
-  bottom: 5px;
+footer p {
+  position: fixed;
+  margin-top: 20px;
+  bottom: 0px;
+  text-align: center;
+  left: 0;
+  right: 0;
   font-size: 18px;
   color: $primary_soft_blue;
 
